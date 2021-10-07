@@ -1,0 +1,460 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Setting code schema, viewport and loading styles -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./CSS/globals.css">
+  <link rel="stylesheet" href="./CSS/styles.CSS">
+
+  <title>Bookmark</title>
+</head>
+
+<body>
+
+  <!-- 
+    Header container consists out of:
+    - Logo 
+    - Features
+    - Pricing
+    - Contact
+    - Login button
+
+    Mobile version has only hamburger icon
+   -->
+  <header>
+    <section class="desktop-header-container" id="desktop-header-container">
+      <img id="logo-bookmark" src="./images/logo-bookmark.svg" alt="Bookmark logo">
+      <p class="desktop-header-features">
+        Features
+      </p>
+      <p class="desktop-header-pricing">
+        Pricing
+      </p>
+      <p class="desktop-header-contact">
+        Contact
+      </p>
+      <button class="desktop-header-button">
+        LOGIN
+      </button>
+      <img class="hamburger-icon" id="hamburger-icon" src="./images/icon-hamburger.svg" alt="Hamburger Icon"/>
+    </section>
+
+    <section class="mobile-header-container" id="mobile-header-container">
+      <section class="mobile-logo-icon-close">
+        <img class="mobile-logo" src="./images/logo-bookmark-white.png" alt="Bookmark logo"/>
+        <img 
+          class="hamburger-menu" 
+          id="hamburger-menu"
+          src="./images/icon-close.svg" 
+          alt="Icon hammburger"
+        />
+      </section>
+      
+      <section class="features-pricing-contact-header-mobile">
+        <section class="mobile-header-features" id="mobile-header-features">
+          FEATURES
+        </section>
+      
+        <section class="mobile-header-pricing">
+          PRICING
+        </section>
+        
+        <section class="mobile-header-contact" id="mobile-header-contact">
+          CONTACT
+        </section>
+
+        <button class="mobile-header-button" id="mobile-header-button">
+          LOGIN
+        </button>
+        
+      </section>
+      
+      
+
+      <section class="mobile-social">
+        <img class="mobile-header-facebook" src="./images/icon-facebook.svg" alt="Facebook icon">
+        <img class="mobile-header-twitter" src="./images/icon-twitter.svg" alt="Twitter icon">
+      </section>
+    </section>
+    
+  </header>
+
+  <!-- 
+      Bookmark section consists out of:
+      - Semi circle background shape 
+      - Title
+      - Paragraph
+      - "Get it on Chrome" button
+      - "Get it on Firefox" button
+      - Image
+   -->
+  <section class="bookmark">
+    <section class="semi-circle-bookmark"></section>
+    <section class="bookmark-container">
+      <h1 class="bookmark-title">
+        A Simple Bookmark
+        Manager
+      </h1>
+      <p class="bookmark-description">
+        A clean and simple interface to organize your favourite websites.
+        Open a new browser tab and see your sites load instantly. Try it 
+        for free.
+      </p>
+      <button class="get-it-on-chrome">
+        Get it on Chrome
+      </button>
+      <button class="get-it-on-firefox">
+        Get it on Firefox
+      </button>
+    </section>
+    <img 
+      class="bookmark-illustration-image" 
+      src="./images/illustration-hero.svg" 
+      alt="Illustration features"
+    />  
+  </section>
+
+  <!-- 
+    Features consists out of: 
+    - Title
+    - Explanation
+   -->
+  <section class="features" id="features">
+    <h1 class="features-title">
+      Features
+    </h1>
+    <p class="features-description">
+      Our aim is to make it quick and easy for you to access your favourite websites. 
+      Your bookmarks sync between your devices so you can access them on the go.
+    </p>
+  </section>
+
+  <!-- 
+    Feature slides:
+    1. Simple bookmarking
+    2. Speedy Searching
+    3. Easy sharing
+   -->
+  <section class="bookmarking-searching-sharing">
+    <section class="simple-bookmarking" id="simple-bookmarking">
+      Simple Bookmarking
+    </section>
+    <section class="speedy-searching" id="speedy-searching">
+      Speedy Searching
+    </section>
+    <section class="easy-sharing" id="easy-sharing">
+      Easy Sharing
+    </section>
+  </section>
+
+  <!-- Slide one - Simple bookmarking -->
+  <section class="bookmark-slides" id="slide-one">
+    <section class="semi-circle-bookmark-slides"></section>
+    <img 
+      class="bookmark-slide-illustration-image" 
+      id="bookmark-slide-illustration-image" 
+      src="./images/illustration-features-tab-1.svg" 
+      alt="Illustration features"
+    />
+    <section class="bookmark-slide-content">
+      <h1 class="bookmark-slide-title" id="bookmark-slide-title">
+        Bookmark in one click
+      </h1>
+      <p class="bookmark-slide-description" id="bookmark-slide-description">
+        Organize your bookmarks however you like. Our simple drag-and-drop interface 
+        gives you complete control over how you manage your favourite sites.
+      </p>
+      <button class="more-info">
+        More Info
+      </button>
+    </section>
+  </section>
+
+  <!-- Slide two - Speedy Sharing -->
+  <section class="bookmark-slides none" id="slide-two">
+    <section class="semi-circle-bookmark-slides"></section>
+    <img 
+      class="bookmark-slide-illustration-image" 
+      id="bookmark-slide-illustration-image" 
+      src="./images/illustration-features-tab-2.svg" 
+      alt="Illustration features"
+    />
+    <section class="bookmark-slide-content">
+      <h1 class="bookmark-slide-title" id="bookmark-slide-title">
+        Intelligent search
+      </h1>
+      <p class="bookmark-slide-description" id="bookmark-slide-description">
+        Our powerful search feature will help you find saved sites in no time at all. 
+        No need to trawl through all of your bookmarks.
+      </p>
+      <button class="more-info">
+        More Info
+      </button>
+    </section>
+  </section>
+
+  <!-- Slide three - Easy Sharing -->
+  <section class="bookmark-slides none" id="slide-three">
+    <section class="semi-circle-bookmark-slides"></section>
+    <img 
+      class="bookmark-slide-illustration-image" 
+      id="bookmark-slide-illustration-image" 
+      src="./images/illustration-features-tab-3.svg" 
+      alt="Illustration features"
+    />
+    <section class="bookmark-slide-content">
+      <h1 class="bookmark-slide-title" id="bookmark-slide-title">
+        Share your bookmarks
+      </h1>
+      <p class="bookmark-slide-description" id="bookmark-slide-description">
+        Easily share your bookmarks and collections with others. Create a shareable 
+        link that you can send at the click of a button.
+      </p>
+      <button class="more-info">
+        More Info
+      </button>
+    </section>
+  </section>
+
+
+  <!-- 
+    Download the extension consists out of:
+    - Title
+    - Description
+   -->
+  <section class="download-the-extension">
+    <h1 class="download-the-extension-title">
+      Download the extension
+    </h1>
+    <p class="download-the-extension-description">
+      We’ve got more browsers in the pipeline. Please do let us know if you’ve 
+      got a favourite you’d like us to prioritize.
+    </p>
+  </section>
+    
+  <!-- Add to chrome -->
+  <section class="chrome-firefox-opera">
+    <section class="add-to-chrome">
+      <img 
+        class="chrome-img" 
+        src="./images/logo-chrome.svg" 
+        alt="Google Chrome logo"
+      />
+      <h1 class="chrome-firefox-opera-title">
+        Add to Chrome
+      </h1>
+      <p class="chrome-firefox-opera-version">
+        Minimum version 62
+      </p>
+      <img 
+        class="bacground-dots-image" 
+        src="./images/bg-dots.svg" 
+        alt="Background dots"
+      />
+      <button class="add-and-install-button">
+        Add & Install Extension
+      </button>
+    </section>
+
+    <!-- Add to Firefox -->
+    <section class="add-to-firefox">
+      <img 
+        class="firefox-img" 
+        src="./images/logo-firefox.svg" 
+        alt="Mozilla Firefox logo"
+      />
+      <h1 class="chrome-firefox-opera-title">
+        Add to Firefox
+      </h1>
+      <p class="chrome-firefox-opera-version">
+        Minimum version 55
+      </p>
+      <img 
+        class="bacground-dots-image"
+        src="./images/bg-dots.svg" 
+        alt="Background dots"
+      >
+      <button class="add-and-install-button">
+        Add & Install Extension
+      </button>
+    </section>
+
+    <!-- Add to Opera -->
+    <section class="add-to-opera">
+      <img 
+        class="opera-img" 
+        src="./images/logo-opera.svg" 
+        alt="Opera logo"
+      />
+      <h1 class="chrome-firefox-opera-title">
+        Add to Opera
+      </h1>
+      <p class="chrome-firefox-opera-version">
+        Minimum version 46
+      </p>
+      <img 
+        class="bacground-dots-image" 
+        src="./images/bg-dots.svg" 
+        alt="Background dots"
+      />
+      <button class="add-and-install-button">
+        Add & Install Extension
+      </button>
+    </section>
+  </section>
+
+  <!-- 
+    Questions container consists out of:
+    - Title
+    - Description
+    - 4 questions
+   -->
+  <section class="questions-container">
+    <h1 class="questions-tile">
+      Frequently Asked Questions
+    </h1>
+    <p class="questions-description">
+      Here are some of our FAQs. If you have any other questions you’d like 
+      answered please feel free to email us.
+    </p>
+
+    <!-- Question 1 -->
+    <section class="question-container">
+      <p class="question" onclick="toggleAnswer(1)">
+        What is Bookmark?
+      </p>
+      <img 
+        class="arrow" 
+        id="first" 
+        src="./images/icon-arrow.svg" 
+        alt="Image of an arrow"
+      />
+      <p class="answer answer-hidden">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+        justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+      </p>
+    </section>
+
+    <!-- Question 2 -->
+    <section class="question-container">
+      <p class="question" onclick="toggleAnswer(2)">
+        How can I request a new browser?
+      </p>
+      <img 
+        class="arrow" 
+        id="second" 
+        src="./images/icon-arrow.svg" 
+        alt="Image of an arrow"
+      />
+      <p class="answer answer-hidden">
+        Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+        Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
+        ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+        Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+      </p>
+    </section>
+    
+    <!-- Question 3 -->
+    <section class="question-container">
+      <p class="question" onclick="toggleAnswer(3)">
+        Is there a mobile app?
+      </p>
+      <img 
+        class="arrow" 
+        id="third" 
+        src="./images/icon-arrow.svg" 
+        alt="Image of an arrow"
+      />
+      <p class="answer answer-hidden">
+        Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
+        urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
+        sollicitudin ex et ultricies bibendum.
+      </p>
+    </section>
+
+    <!-- Question 4 -->
+    <section class="question-container" id="last-question">
+      <p class="question" onclick="toggleAnswer(4)">
+        What about other Chromium browsers?
+      </p>
+      <img 
+        class="arrow" 
+        id="fourth" 
+        src="./images/icon-arrow.svg" 
+        alt="Image of an arrow"
+      />
+      <p class="answer answer-hidden">
+        Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+        vitae neque eget nisl gravida pellentesque non ut velit.
+      </p>
+    </section>
+      
+    <button class="more-info button-questions">
+      More Info
+    </button>
+  </section>
+
+  <!-- 
+    Contact us consists out of:
+    - Paragraph
+    - Title
+    - Input
+    - Button
+  -->
+  <section class="contact-us" id="contact-us">
+    <p class="joined">
+      35,000+ already joined
+    </p>
+    <h1 class="stay-up-to-date">
+      Stay up-to-date with what we’re doing
+    </h1>
+    <section class="input-and-button">
+        <input 
+          class="email-input transparent" 
+          id="email-input" 
+          type="text"
+          placeholder="example@email/com"
+        >
+        <p class="error" id="error">
+          Whoops, make sure that's an email
+        </p>
+        <button class="contact-us-button" id="contact-us-button">
+          Contact Us
+        </button>
+    </section>
+  </section>
+
+  <!-- 
+    Footer consists out of:
+    1. Logo
+    2. Features
+    3. Pricing
+    4. Contact
+    5. Facebook and Twitter icons
+   -->
+  <footer class="footer">
+    <section class="bookmark-footer">
+      <img class="bookmark-image-footer" src="./images/logo-bookmark.svg" alt="Bookmark logo">
+      <p class="bookmark-logo-footer">BOOKMARK</p>
+    </section>
+
+    <section class="content-footer">
+      <p class="footer-features">FEATURES</p>
+      <p class="footer-pricing">PRICING</p>
+      <p class="footer-contact">CONTACT</p>
+    </section>
+    
+    <section class="facebook-twitter-footer">
+      <img class="facebook-icon" src="./images/icon-facebook.svg" alt="Facebook icon">
+      <img class="twitter-icon" src="./images/icon-twitter.svg" alt="Twitter icon">
+    </section>
+  </footer>
+    
+  <script src="./utils/index.js"></script>
+</body>
+</html>

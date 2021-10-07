@@ -1,0 +1,2596 @@
+
+/* 
+    Desktop header consists out of:
+    - Logo
+    - Features/Pricing/Contact 
+    - Button
+*/
+
+.hamburger-icon {
+    
+    display: none;
+}
+
+.desktop-header-container {
+
+    display: grid;
+    grid-template-columns: 7fr 0.7fr 0.7fr 0.7fr 0.7fr;
+
+    width: 78vw;
+    margin: auto;
+    margin-top: 5vh;
+}
+
+.desktop-header-features {
+
+    margin-top: 5px;
+}
+
+.desktop-header-features:hover {
+
+    color: #FA5959;
+    cursor: pointer;
+}
+
+.desktop-header-pricing {
+
+    margin-left: 25px;
+    margin-top: 5px;
+}
+
+.desktop-header-pricing:hover {
+
+    color: #FA5959;
+    cursor: pointer;
+}
+
+.desktop-header-contact {
+
+    margin-left: 25px;
+    margin-top: 5px;
+}
+
+.desktop-header-contact:hover {
+
+    color: #FA5959;
+    cursor: pointer;
+}
+
+.desktop-header-button {
+
+    margin-left: 25px;
+    padding: 5px 23px 5px 23px;
+
+    border: 2px solid #FA5959;
+
+    background-color: #FA5959;
+    border-radius: 5px;
+
+    color: white;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+}
+
+.desktop-header-button:hover{
+
+    background-color: white;
+    border: 2px solid #FA5959;
+    color: #FA5959;
+}
+
+/* 
+    Mobile container consists out of: 
+    - Logo
+    - Hamburger icon 
+
+    When clicked on Hamburger Icon menu appears that has: 
+    - Features
+    - Pricing
+    - Contact
+    - Login
+    - Icons for Twitter and Facebook
+*/
+.mobile-header-container {
+
+    background-color: #242A45;
+    opacity: 0.95;
+
+    color: white;
+    letter-spacing: 3px;
+    visibility: hidden;
+
+    position: fixed;
+    z-index: 10;
+}
+
+.mobile-logo-icon-close {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    margin-top: 5vh;
+    width: 80%;
+}
+
+.hamburger-menu {
+
+    margin-left: auto;
+}
+
+.mobile-header-container-active {
+
+    height: 100vh;
+    width: 100vw;
+    visibility: visible;
+}
+
+.features-pricing-contact-header-mobile {
+
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    margin-top: 8vh;
+
+}
+
+.mobile-header-features {
+
+    border-top: 1px solid #5B6074;
+    padding: 4vh;
+}
+
+.mobile-header-pricing {
+
+    border-top: 1px solid #5B6074;
+    padding: 4vh;
+}
+
+.mobile-header-contact {
+
+    border-top: 1px solid #5B6074;
+    border-bottom: 1px solid #5B6074;
+    padding: 4vh;
+}
+
+.mobile-header-button {
+
+   width: 100%;
+
+    padding: 20px 20px 20px 20px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+
+    letter-spacing: 3px;
+    margin-top: 4vh;
+}
+
+.mobile-social {
+
+    grid-area: social;
+    text-align: center;
+    margin-top: 23vh;
+}
+
+.mobile-header-facebook {
+
+    margin-right: 4vw;
+}
+
+
+/* 
+    Bookmark 
+*/
+
+.bookmark {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    margin-top: 15vh;
+}
+
+/* Semi circle */
+.semi-circle-bookmark {
+
+    width: 38vw;
+    height: 25vw;
+    background-color: #5267DF;
+
+    border-top-left-radius: 352px;
+    border-bottom-left-radius: 352px;
+
+    position: absolute;
+    right: 0;
+    top: 30%;
+
+    z-index: 0;
+}
+
+.bookmark-illustration-image {
+
+    position: relative;
+    z-index: 1;
+    width: 95%;
+}
+
+.bookmark-title {
+
+    font-size: 48px;
+    line-height: 52px;
+    font-weight: 500;
+    color: #242A45;
+
+    margin-left: 10vw;
+    margin-right: 5vw;
+    margin-top: 8vh;
+}
+
+.bookmark-description {
+
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 3vh;
+
+    font-size: 18px;
+    line-height: 28px;
+    color: #242A45;
+    opacity: 0.5;
+}
+
+.get-it-on-chrome {
+
+    margin-left: 10vw;
+    margin-top: 6vh;
+    margin-right: 2vw;
+
+    font-family: "Rubik";
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+
+    background-color: #5267DF;
+    border: 2px solid #5267DF;
+    border-radius: 5px;
+    padding: 6px;
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.16);
+}
+
+.get-it-on-chrome:hover {
+
+    background-color: white;
+    color: #5267DF;
+}
+
+.get-it-on-firefox {
+
+    font-family: "Rubik";
+    font-size: 14px;
+    font-weight: 500;
+    color: #242A45;
+    letter-spacing: 0.25px;
+
+    background-color: #F7F7F7;
+    border: 2px solid #F7F7F7;
+    padding: 6px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.16);
+}
+
+.get-it-on-firefox:hover {
+
+    border: 2px solid #5B6074;
+    color: #242A45;
+}
+
+/* 
+    Setting features styles
+*/
+.features {
+
+    margin: auto;
+    margin-top: 15vh;
+    margin-bottom: 10vh;
+    text-align: center;
+    width: 30%;
+}
+
+.features-title {
+
+    color: #242A45;
+    font-size: 32px;
+    line-height: 52px;
+    font-weight: 500;
+
+    margin-bottom: 5vh;
+}
+
+.features-description {
+
+    color: #242A45;
+    opacity: 0.5;
+    line-height: 28px;
+    font-size: 18px;
+}
+
+.bookmarking-searching-sharing {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 18vh;
+    border-bottom: 1px solid #c7c7c7;
+    padding-bottom: 0px;
+    color: #242A45;
+    opacity: 0.68;
+}
+
+.simple-bookmarking {
+
+    padding-bottom: 30px;
+    border-bottom: 3px solid #FA5959;
+}
+
+.simple-bookmarking:hover {
+
+    color: #FA5959;
+    cursor: pointer;
+}
+
+.speedy-searching:hover {
+
+    color: #FA5959;
+    cursor: pointer;
+}
+
+.easy-sharing:hover {
+
+    color: #FA5959;
+    cursor: pointer;
+}
+
+/* 
+    Bookmark slides illustrations and description styles 
+*/
+
+.semi-circle-bookmark-slides {
+
+    width: 42vw;
+    height: 23vw;
+    background-color: #5267DF;
+
+    border-top-right-radius: 352px;
+    border-bottom-right-radius: 352px;
+
+    position: absolute;
+    top: 2vh;
+    left: 0;
+
+    z-index: 0;
+}
+
+.none {
+
+    display: none !important;
+}
+
+.bookmark-slide-illustration-image {
+
+    position: relative;
+    z-index: 1;
+    left: 20%;
+    bottom: 17%;
+    width: 68%;
+}
+
+.bookmark-slides {
+
+    display: grid;
+    grid-template-columns: 3.9fr 3.4fr;
+    position: relative;
+    margin-bottom: 10vh;
+    text-align: left;
+
+    position: relative;
+    left: -100px;
+
+    -webkit-animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-right {
+
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(100px);
+        transform: translateX(100px);
+    }
+}
+@keyframes slide-right {
+
+    0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    }
+    100% {
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+    }
+}
+  
+
+.bookmark-slide-content {
+
+    width: 65%;
+}
+
+.bookmark-slide-title{
+
+    color: #242A45;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 52px;
+    letter-spacing: -0.1px;
+    
+    margin-bottom: 2vh;
+}
+
+.bookmark-slide-description {
+
+    color: #242A45;
+    font-size: 18px;
+    line-height: 28px;
+    opacity: 0.5;
+    margin-bottom: 3vh;
+}
+
+.more-info {
+
+    background-color: #5267DF;
+    border: none;
+    border-radius: 5px;
+
+    color: white;
+    font-family: "Rubik";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+    padding: 4px 15px 4px 15px;
+    border: 3px solid #5267df;
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.12);
+}
+
+.more-info:hover {
+    
+    background-color: white;
+    color: #5267df;
+  }
+
+.download-the-extension {
+
+    margin: auto;
+    width: 30%;
+    text-align: center;
+}
+
+.download-the-extension-title {
+
+    font-size: 32px;
+    line-height: 52px;
+    letter-spacing: -0.1px;
+    font-weight: 500;
+    
+    margin-bottom: 3vh;
+}
+
+.download-the-extension-description {
+
+    color: #242A45;
+    opacity: 0.5;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.chrome-firefox-opera {
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.add-to-chrome {
+
+    display: grid;
+    grid-template-rows: auto;
+    margin-right: 2vw;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.22);
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+.chrome-img {
+
+    margin: auto;
+    margin-bottom: 4vh;
+    margin-top: 10%;
+}
+
+
+.add-to-firefox {
+
+    position: relative;
+    display: grid;
+    grid-template-rows: auto;
+    margin-right: 2vw;
+
+    margin-right: 2vw;
+    top: 4vh;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.22);
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+.firefox-img {
+
+    margin: auto;
+    margin-bottom: 4vh;
+    margin-top: 10%;
+}
+
+.add-to-opera {
+
+    position: relative;
+    display: grid;
+    grid-template-rows: auto;
+    margin-right: 2vw;
+
+    margin-right: 2vw;
+    top: 8vh;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.22);
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+.opera-img {
+
+    margin: auto;
+    margin-bottom: 4vh;
+    margin-top: 10%;
+}
+
+.chrome-firefox-opera-title {
+
+    color: #242A45;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23.7px;
+    letter-spacing: 0.25px;
+
+    margin-bottom: 1vh;
+}
+
+.chrome-firefox-opera-version {
+
+    color: #242A45;
+    opacity: 0.5;
+    font-size: 15px;
+    line-height: 28px;
+
+    margin-bottom: 3vh;
+}
+
+.bacground-dots-image {
+
+    margin-bottom: 3vh;
+}
+
+.add-and-install-button {
+
+    font-family: "Rubik";
+    background-color: #5267DF;
+    color: white;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.25px;
+    font-weight: 500;
+
+    border: 2px solid #5267DF;
+    border-radius: 5px;
+    width: 80%;
+  
+    margin-left: 10%;
+    margin-bottom: 10%;
+    padding: 11px;
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.12);
+}
+
+.add-and-install-button:hover {
+
+    background-color: white;
+    color: #5267DF;
+}
+
+/* 
+    Styling questions section 
+*/
+.questions-container {
+
+    margin: auto;
+    width: 35%;
+    margin-top: 30vh;
+    text-align: center;
+}
+
+.questions-tile {
+
+    color: #242A45;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 52px;
+    letter-spacing: -0.1px;
+}
+
+.questions-description {
+
+    color: #242A45;
+    opacity: 0.5;
+    font-size: 18px;
+    line-height: 28px;
+
+    margin-top: 2.5vh;
+    margin-bottom: 9vh;
+}
+
+.question-container {
+
+    display: grid;
+    grid-template-columns: 10fr 1fr;
+    border-top: 1px solid #c7c7c7;
+    align-items: center;
+}
+
+#last-question {
+
+    border-bottom: 1px solid #c7c7c7;
+}
+
+.rotate-arrow {
+
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    filter: invert(43%) sepia(51%) saturate(952%) hue-rotate(316deg) brightness(104%) contrast(95%);
+}
+
+.last-question {
+
+    border-bottom: 1px solid #c7c7c7;
+}
+
+.question {
+
+    text-align: left;
+    margin-bottom: 4vh;
+    margin-top: 4vh;
+    
+    color: #242A45;
+    font-size: 18px;
+}
+
+.question:hover {
+
+    color: #FA5959;
+    cursor: pointer;
+}
+
+.answer {
+    
+    text-align: left;
+    margin-bottom: 3vh;
+    color: #242a45;
+    opacity: 0.75;
+    line-height: 36px;
+    letter-spacing: 0.15px;
+  
+    position: relative;
+    top: -50px;
+  
+    -webkit-animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+  
+@-webkit-keyframes slide-bottom {
+
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    100% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+}
+
+@keyframes slide-bottom {
+
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    100% {
+        -webkit-transform: translateY(30px);
+        transform: translateY(30px);
+    }
+}
+
+.answer-hidden {
+
+    display: none;
+}
+
+.button-questions {
+
+    margin-top: 7vh;
+    margin-bottom: 15vh;
+}
+
+.contact-us {
+
+    text-align: center;
+
+    background-color: #5267DF;
+    color: white;
+}
+
+.joined {
+
+    margin-top: 7vh;
+    margin-bottom: 4vh;
+    padding-top: 8vh;
+    font-size: 13px;
+    letter-spacing: 5px;
+}
+
+.stay-up-to-date {
+
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: -0.1px;
+    line-height: 40px;
+
+    width: 25%;
+    margin: auto;
+}
+
+.input-and-button {
+
+    display: grid;
+    grid-template-areas: 
+        "input button"
+        "error .";
+    grid-template-columns: 2fr 1fr;
+    width: 25%;
+    
+    padding-bottom: 5vh;
+    margin: auto;
+    margin-top: 4vh;
+}
+
+.contact-us-button {
+
+    font-family: "Rubik";
+    grid-area: button;
+    border-radius: 5px;
+    border: 3px solid #FA5959;
+    background-color: #FA5959;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 0.25px;
+    font-weight: 500;
+}
+
+.contact-us-button:hover {
+
+    background-color: white;
+    color: #FA5959;
+}
+
+.email-input {
+
+    grid-area: input;
+
+    padding: 13px;
+    margin-right: 1vw;
+    border: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+    background: url(/images/icon-error.svg) no-repeat;
+    background-position: right 1vw top 1.2vh;
+    background-color: white;
+}
+
+.email-input::placeholder {
+
+    font-family: "Rubik";
+}
+
+.email-input-error {
+
+    border: 3px solid #FA5959;
+    padding: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.transparent {
+
+    background: transparent;
+    background-color: white;
+}
+
+.error {
+
+    grid-area: error;
+    font-style: italic;
+    font-size: 10px;
+    letter-spacing: 0.25px;
+    background-color: #FA5959;
+    margin-right: 1vw;
+    border-top: 5px solid #FA5959;
+    border-bottom: 8px solid #FA5959;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: left;
+    visibility: hidden;
+    padding-left: 0.3vw;
+}
+
+.error-displayed {
+
+    visibility: visible;
+}
+
+.footer {
+
+    display: flex;
+    background-color: #242A45;
+    color: white;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 1.5vw;
+}
+
+.bookmark-footer {
+
+    display: grid;
+    grid-template-areas: "footer-image bookmark-text";
+    align-items: center;
+    justify-items: center;
+}
+
+.bookmark-logo-footer {
+
+    grid-area: bookmark-text;
+}
+
+.bookmark-image-footer {
+
+    grid-area: bookmark-text;
+}
+
+.content-footer {
+
+    display: flex;
+    margin-right: 35%;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    font-weight: lighter;
+}
+
+.footer-features {
+
+    margin-right: 25%;
+}
+
+.footer-features:hover {
+
+    color: #FA5959;
+    cursor: pointer;
+}
+
+.footer-pricing {
+
+    margin-right: 25%;
+}
+
+.footer-pricing:hover {
+
+    color: #FA5959;
+    cursor: pointer;
+}
+
+.footer-contact:hover {
+
+    color: #FA5959;
+    cursor: pointer;
+}
+
+.twitter-icon {
+
+    margin-left: 2vw;
+    margin-right: 4vw;
+}
+
+.twitter-icon:hover{
+
+    filter: invert(49%) sepia(67%) saturate(3885%) hue-rotate(331deg) brightness(109%) contrast(97%);
+    cursor: pointer;
+}
+
+.facebook-icon:hover {
+
+    filter: invert(49%) sepia(67%) saturate(3885%) hue-rotate(331deg) brightness(109%) contrast(97%);
+    cursor: pointer;
+}
+
+
+/* 
+    Media queries
+*/
+
+
+@media only screen and (max-width: 1350px) {
+
+    .input-and-button {
+
+        width: 27%;
+    }
+
+    .stay-up-to-date {
+
+        width: 30%;
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 1270px) {
+
+    .bookmark-title {
+
+        font-size: 38px;
+    }
+    
+    .bookmark-description {
+    
+        font-size: 16px;
+    }
+
+    .contact-us-button {
+
+        font-size: 11px;
+    }
+
+    .stay-up-to-date {
+
+        font-size: 28px;
+    }
+
+    .features-description {
+
+        font-size: 16px;
+    }
+
+    .bookmark-slide-description {
+        font-size: 16px;
+    }
+
+    .download-the-extension-description {
+
+        font-size: 16px;
+    }
+
+    .questions-description {
+
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 1160px) {
+
+    .bookmark-title {
+
+        line-height: 45px;
+    }
+
+    .bookmark-description {
+
+        line-height: 25px;
+    }
+
+    .contact-us-button {
+
+        font-size: 9px;
+        width: 100%;
+        padding: 1px;
+    }
+
+    .answer {
+
+        font-size: 14px;
+    }
+
+    .get-it-on-chrome {
+
+        margin-top: 1.5vh;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+
+    .bookmark-title {
+
+        font-size: 34px;
+        line-height: 40px;
+    }
+
+    .bookmark-description {
+
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 1vh;
+    }
+
+    .get-it-on-chrome {
+
+        margin-top: 1vh;
+    }
+
+    .contact-us-button {
+
+        width: 170%;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+
+    .bookmark-title {
+
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    .bookmark-description {
+
+        font-size: 12px;
+        line-height: 15px;
+        margin-bottom: 1vh;
+    }
+
+    .get-it-on-chrome {
+
+        margin-top: 1vh;
+    }
+
+    .features-title {
+
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    .features-description {
+
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .bookmark-slide-title {
+
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    .bookmark-slide-description {
+
+        font-size: 12px; 
+        line-height: 17px;
+    }
+
+    .download-the-extension-title {
+
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    .download-the-extension-description {
+
+        font-size: 15px;
+        line-height: 22px;
+    }
+}
+
+/* ----------------------------------------------------Mobile version----------------------------------------------------*/
+
+@media only screen and (max-width: 830px) {
+
+    .desktop-header-features,
+    .desktop-header-pricing,
+    .desktop-header-contact,
+    .desktop-header-button {
+
+        display: none;
+    }
+
+    .hamburger-icon {
+
+        display: inline;
+        margin-left: auto;
+
+    }
+
+    .desktop-header-container {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .bookmark {
+
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .bookmark-illustration-image {
+
+        width: 75%;
+        position: static;
+        margin: auto;
+    }
+
+    .semi-circle-bookmark {
+
+        width: 78vw;
+        height: 45vw;
+        background-color: #5267DF;
+    
+        border-top-left-radius: 352px;
+        border-bottom-left-radius: 352px;
+    
+        position: absolute;
+        right: -10vw;
+        top: 13%;
+    
+        z-index: 0;
+    }
+
+    .bookmark-container {
+
+        width: 60%;
+        margin: auto;
+    }
+
+    .bookmark-title {
+
+        text-align: center;
+        font-size: 30px;
+        line-height: 40px;
+        letter-spacing: 0.09px;
+
+        margin-top: 12vh;
+    }
+
+    .bookmark-description {
+
+        text-align: center;
+        font-size: 15px;
+        line-height: 25px;
+        margin-bottom: 4vh;
+    }
+
+    .bookmark-container {
+
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .get-it-on-chrome {
+
+        font-size: 14px;
+        line-height: 28px;
+        letter-spacing: 0.25px;
+        margin-left: 0;
+    }
+
+    .get-it-on-firefox {
+
+        font-size: 14px;
+        line-height: 28px;
+        letter-spacing: 0.25px;
+    }
+
+    .features {
+        
+        width: 40%;
+        margin-top: 15vh;
+    }
+
+    .features-title {
+
+        font-size: 24px;
+        line-height: 52px;
+        letter-spacing: -0.75px;
+    }
+
+    .features-description {
+
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .bookmarking-searching-sharing {
+
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        border: none;
+        margin-bottom: 8vh;
+    }
+
+    .simple-bookmarking {
+
+        border-bottom: 1px solid #c7c7c7;
+        border-top: 1px solid #c7c7c7;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+    }
+
+    .simple-bookmarking-clicked {
+
+        border-bottom: 3px solid #FA5959;
+    }
+
+    .speedy-searching {
+
+        border-bottom: 1px solid #c7c7c7;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+    }
+
+    .easy-sharing {
+
+        border-bottom: 1px solid #c7c7c7;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+    }
+
+    .bookmark-slides {
+        
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .bookmark-slide-content {
+
+        width: 40%;
+        margin: auto;
+        text-align: center;
+
+    }
+
+    .bookmark-slide-title {
+
+        font-size: 24px;
+        line-height: 52px;
+        letter-spacing: -0.075px;
+        margin-top: 14vh;
+    }
+
+    .bookmark-slide-description {
+
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .semi-circle-bookmark-slides {
+
+        height: 46vw;
+        width: 80vw;
+        top: 16vh;
+    }
+
+    .bookmark-slide-illustration-image {
+
+        width: 75%;
+        position: static;
+        margin: auto;
+        margin-top: 4vh;
+    }
+
+    .download-the-extension {
+
+        width: 40%;
+        margin-top: 13vh;
+    }
+
+    .download-the-extension-title {
+
+        font-size: 24px;
+        line-height: 52px;
+        letter-spacing: -0.075px;
+    }
+
+    .download-the-extension-description {
+
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .chrome-firefox-opera {
+
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 10vh;
+        width: 40%;
+    }
+
+    .add-to-chrome {
+
+        justify-content: center;
+    }
+
+    .add-to-firefox {
+
+        justify-content: center;
+    }
+
+    .add-to-opera {
+
+        justify-content: center;
+    }
+
+    .questions-tile {
+
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: -0.075px;
+    }
+
+    .questions-description {
+
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .question {
+
+        font-size: 15px;
+        line-height: 32px;
+    }
+
+
+    .answer {
+
+        font-size: 15px;
+        line-height: 30px;
+        letter-spacing: 0.140625px;
+    }
+
+    .contact-us {
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .joined {
+
+        font-size: 12px;
+        line-height: 40px;
+        letter-spacing: 4.61539px;
+    }
+
+    .stay-up-to-date {
+
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: -0.08px;
+        margin-bottom: 8vh;
+    }
+
+    .input-and-button {
+
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        width: 40%;
+    }
+
+    .email-input {
+
+        width: 91%;
+        align-items: center;
+        background-position: 95% center;
+    }
+
+    .error {
+
+        width: 98.1%;
+    }
+
+    .contact-us-button {
+
+        width: 100%;
+
+        font-size: 15px;
+        line-height: 33px;
+        letter-spacing: 0.25px;
+        margin-top: 5vh;
+    }
+
+    .footer {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .bookmark-footer {
+
+        justify-items: end;
+        margin-top: 15vh;
+        margin-bottom: 10vh;
+    }
+
+    .bookmark-logo-footer {
+
+        font-size: 20px;
+        /* margin-right: 3%; */
+    }
+
+    .content-footer {
+
+        display: flex;
+        flex-direction: column;
+        margin-right: 0;
+        align-items: center;
+        font-size: 15px;
+        line-height: 17px;
+        letter-spacing: 1.73px;
+    }
+
+    .footer-features {
+
+        margin-right: 0;
+        margin-bottom: 10vh;
+    }
+
+    .footer-pricing {
+
+        margin-right: 0;
+        margin-bottom: 10vh;
+    }
+
+    .footer-contact {
+
+        margin-bottom: 10vh;
+    }
+
+    .facebook-twitter-footer {
+
+        align-items: center;
+    }
+
+    .facebook-icon {
+
+        margin-left: 9vh;
+        margin-right: 6vh;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    .bookmark-container {
+
+        width: 80%;
+    }
+
+    .features {
+
+        width: 65%;
+    }
+
+   .bookmark-slide-content {
+
+    width: 60%;
+   }
+
+   .download-the-extension {
+
+    width: 55%;
+   }
+
+   .questions-container {
+
+    width: 65%;
+   }
+
+    .stay-up-to-date {
+
+        width: 40%;
+        margin-bottom: 2vh;
+    }
+
+    .error {
+
+        margin-top: 0;
+        width: 101%;
+    }
+
+    .contact-us-button {
+
+        width: 103%;
+    }
+    
+}
+
+/* ------------------------------------Media queries for specific mobile and tablet devices------------------------------------ */
+
+@media only screen and (min-width: 280px) and (max-width: 320px) and (min-height: 650px) and (max-height: 655px) {
+
+
+    .semi-circle-bookmark {
+
+        top: 10%;
+    }
+
+    .bookmark-illustration-image {
+
+        width: 85%;
+    }
+
+    .bookmark-container {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bookmark-title {
+
+        font-size: 24px;
+        line-height: 30px;
+        margin-top: 5vh;
+    }
+
+    .bookmark-description {
+
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .get-it-on-chrome {
+
+        font-size: 10px;
+        line-height: 15px;
+        margin-left: 0%;
+    }
+
+    .get-it-on-firefox {
+
+        font-size: 10px;
+        line-height: 15px;
+        margin-top: 2vh;
+    }
+
+    .features {
+
+        width: 80%;
+    }
+
+    .features-title {
+
+        font-size: 20px;
+        margin-bottom: 1vh;
+    }
+
+    .features-description {
+
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .bookmarking-searching-sharing {
+
+        width: 90%;
+    }
+
+    .semi-circle-bookmark-slides {
+
+        top: 12%;
+    }
+
+    .bookmark-slide-content {
+
+        width: 85%;
+    }
+
+    .bookmark-slide-title {
+
+        font-size: 20px;
+    }
+
+    .bookmark-slide-description {
+
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .more-info {
+
+        font-size: 12px;
+    }
+
+    .download-the-extension {
+
+        width: 85%;
+    }
+
+    .download-the-extension-title {
+
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .download-the-extension-description {
+
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .chrome-firefox-opera {
+
+        width: 80%;
+    }
+
+    .questions-container {
+
+        width: 90%;
+    }
+
+    .questions-tile {
+
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .questions-description {
+
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .question {
+
+        font-size: 14px;
+    }
+
+    .answer {
+
+        font-size: 14px;
+    }
+
+    .stay-up-to-date {
+
+        width: 90%;
+    }
+
+    .input-and-button {
+
+        width: 85%;
+    }
+
+    .error {
+
+        width: 101.3%;
+    }
+
+    .bookmark-footer {
+
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+
+    .footer-features {
+
+        margin-bottom: 5vh;
+    }
+
+    .footer-pricing {
+
+        margin-bottom: 5vh;
+    }
+
+    .footer-contact {
+
+        margin-bottom: 5vh;
+    }
+
+    .facebook-twitter-footer {
+
+        margin-bottom: 5vh;
+    }
+}
+
+
+@media only screen and (min-width: 300px) and (max-width: 320px) and (min-height: 565px) and (max-height: 600px) {
+
+
+    .semi-circle-bookmark {
+
+        top: 10%;
+    }
+
+    .bookmark-illustration-image {
+
+        width: 85%;
+    }
+
+    .bookmark-container {
+
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bookmark-title {
+
+        font-size: 24px;
+        line-height: 30px;
+        margin-top: 5vh;
+    }
+
+    .bookmark-description {
+
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .get-it-on-chrome {
+
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .get-it-on-firefox {
+
+        font-size: 10px;
+        line-height: 15px;
+        margin-top: 2vh;
+    }
+
+    .features {
+
+        width: 80%;
+    }
+
+    .features-title {
+
+        font-size: 20px;
+        margin-bottom: 1vh;
+    }
+
+    .features-description {
+
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .bookmarking-searching-sharing {
+
+        width: 90%;
+    }
+
+    .semi-circle-bookmark-slides {
+
+        top: 12%;
+    }
+
+    .bookmark-slide-content {
+
+        width: 85%;
+    }
+
+    .bookmark-slide-title {
+
+        font-size: 20px;
+    }
+
+    .bookmark-slide-description {
+
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .more-info {
+
+        font-size: 12px;
+    }
+
+    .download-the-extension {
+
+        width: 85%;
+    }
+
+    .download-the-extension-title {
+
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .download-the-extension-description {
+
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .chrome-firefox-opera {
+
+        width: 80%;
+    }
+
+    .questions-container {
+
+        width: 90%;
+    }
+
+    .questions-tile {
+
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .questions-description {
+
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .question {
+
+        font-size: 14px;
+    }
+
+    .stay-up-to-date {
+
+        width: 90%;
+    }
+
+    .input-and-button {
+
+        width: 85%;
+    }
+
+    .contact-us-button {
+
+        width: 101%;
+    }
+
+    .error {
+
+        width: 100.3%;
+    }
+
+    .bookmark-footer {
+
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+
+    .footer-features {
+
+        margin-bottom: 5vh;
+    }
+
+    .footer-pricing {
+
+        margin-bottom: 5vh;
+    }
+
+    .footer-contact {
+
+        margin-bottom: 5vh;
+    }
+
+    .facebook-twitter-footer {
+
+        margin-bottom: 5vh;
+    }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 376px) and (min-height: 640px) and (max-height: 668px)  {
+
+    .semi-circle-bookmark {
+
+        top: 10%;
+    }
+
+    .bookmark-illustration-image {
+
+        width: 85%;
+    }
+
+    .bookmark-container {
+
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bookmark-title {
+
+        font-size: 24px;
+        line-height: 30px;
+        margin-top: 5vh;
+    }
+
+    .bookmark-description {
+
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .get-it-on-chrome {
+
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .get-it-on-firefox {
+
+        font-size: 10px;
+        line-height: 15px;
+        margin-top: 2vh;
+    }
+
+    .features {
+
+        width: 80%;
+    }
+
+    .features-title {
+
+        font-size: 20px;
+        margin-bottom: 1vh;
+    }
+
+    .features-description {
+
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .bookmarking-searching-sharing {
+
+        width: 90%;
+    }
+
+    .semi-circle-bookmark-slides {
+
+        top: 12%;
+    }
+
+    .bookmark-slide-content {
+
+        width: 85%;
+    }
+
+    .bookmark-slide-title {
+
+        font-size: 20px;
+    }
+
+    .bookmark-slide-description {
+
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .more-info {
+
+        font-size: 12px;
+    }
+
+    .download-the-extension {
+
+        width: 85%;
+    }
+
+    .download-the-extension-title {
+
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .download-the-extension-description {
+
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .chrome-firefox-opera {
+
+        width: 80%;
+    }
+
+    .questions-container {
+
+        width: 90%;
+    }
+
+    .questions-tile {
+
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .questions-description {
+
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .question {
+
+        font-size: 14px;
+    }
+
+    .stay-up-to-date {
+
+        width: 90%;
+    }
+
+    .input-and-button {
+
+        width: 85%;
+    }
+
+    .contact-us-button {
+
+        width: 100%;
+    }
+
+    .error {
+
+        width: 99%;
+    }
+
+    .bookmark-footer {
+
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+
+    .footer-features {
+
+        margin-bottom: 5vh;
+    }
+
+    .footer-pricing {
+
+        margin-bottom: 5vh;
+    }
+
+    .footer-contact {
+
+        margin-bottom: 5vh;
+    }
+
+    .facebook-twitter-footer {
+
+        margin-bottom: 5vh;
+    }
+}
+
+
+@media only screen and (min-width: 400px) and (max-width: 450px) and (min-height: 730px) and (max-height: 825px) {
+
+    .semi-circle-bookmark {
+
+        top: 10%;
+    }
+
+    .bookmark-illustration-image {
+
+        width: 85%;
+    }
+
+    .bookmark-container {
+
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bookmark-title {
+
+        font-size: 24px;
+        line-height: 30px;
+        margin-top: 5vh;
+    }
+
+    .bookmark-description {
+
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .get-it-on-chrome {
+
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .get-it-on-firefox {
+
+        font-size: 10px;
+        line-height: 15px;
+        margin-top: 2vh;
+    }
+
+    .features {
+
+        width: 80%;
+    }
+
+    .features-title {
+
+        font-size: 20px;
+        margin-bottom: 1vh;
+    }
+
+    .features-description {
+
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .bookmarking-searching-sharing {
+
+        width: 90%;
+    }
+
+    .semi-circle-bookmark-slides {
+
+        top: 12%;
+    }
+
+    .bookmark-slide-content {
+
+        width: 85%;
+    }
+
+    .bookmark-slide-title {
+
+        font-size: 20px;
+    }
+
+    .bookmark-slide-description {
+
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .more-info {
+
+        font-size: 12px;
+    }
+
+    .download-the-extension {
+
+        width: 85%;
+    }
+
+    .download-the-extension-title {
+
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .download-the-extension-description {
+
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .chrome-firefox-opera {
+
+        width: 80%;
+    }
+
+    .questions-container {
+
+        width: 90%;
+    }
+
+    .questions-tile {
+
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .questions-description {
+
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .question {
+
+        font-size: 14px;
+    }
+
+    .stay-up-to-date {
+
+        width: 90%;
+    }
+
+    .input-and-button {
+
+        width: 85%;
+    }
+
+    .error {
+
+        width: 98.1%;
+    }
+
+    .contact-us-button {
+
+        width: 99%;
+    }
+
+    .bookmark-footer {
+
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+
+    .footer-features {
+
+        margin-bottom: 5vh;
+    }
+
+    .footer-pricing {
+
+        margin-bottom: 5vh;
+    }
+
+    .footer-contact {
+
+        margin-bottom: 5vh;
+    }
+
+    .facebook-twitter-footer {
+
+        margin-bottom: 5vh;
+    }
+}
+
+@media only screen and (min-width: 535px) and (max-width: 545px) and (min-height: 700px) and (max-height: 722px){
+
+    .error {
+
+        width: 102.5%;
+    }
+}
+
+@media only screen and (min-width: 370px) and (max-width: 376px) and (min-height: 800px) and (max-height: 825px) {
+
+    .semi-circle-bookmark {
+
+        top: 10%;
+    }
+
+    .bookmark-illustration-image {
+
+        width: 85%;
+    }
+
+    .bookmark-container {
+
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bookmark-title {
+
+        font-size: 24px;
+        line-height: 30px;
+        margin-top: 5vh;
+    }
+
+    .bookmark-description {
+
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .get-it-on-chrome {
+
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .get-it-on-firefox {
+
+        font-size: 10px;
+        line-height: 15px;
+        margin-top: 2vh;
+    }
+
+    .features {
+
+        width: 80%;
+    }
+
+    .features-title {
+
+        font-size: 20px;
+        margin-bottom: 1vh;
+    }
+
+    .features-description {
+
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .bookmarking-searching-sharing {
+
+        width: 90%;
+    }
+
+    .semi-circle-bookmark-slides {
+
+        top: 12%;
+    }
+
+    .bookmark-slide-content {
+
+        width: 85%;
+    }
+
+    .bookmark-slide-title {
+
+        font-size: 20px;
+    }
+
+    .bookmark-slide-description {
+
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .more-info {
+
+        font-size: 12px;
+    }
+
+    .download-the-extension {
+
+        width: 85%;
+    }
+
+    .download-the-extension-title {
+
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .download-the-extension-description {
+
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .chrome-firefox-opera {
+
+        width: 80%;
+    }
+
+    .questions-container {
+
+        width: 90%;
+    }
+
+    .questions-tile {
+
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .questions-description {
+
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .question {
+
+        font-size: 14px;
+    }
+
+    .stay-up-to-date {
+
+        width: 90%;
+    }
+
+    .input-and-button {
+
+        width: 85%;
+    }
+
+    .error {
+
+        width: 98.6%;
+    }
+
+    .contact-us-button {
+
+        width: 99%;
+    }
+
+    .bookmark-footer {
+
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+
+    .footer-features {
+
+        margin-bottom: 5vh;
+    }
+
+    .footer-pricing {
+
+        margin-bottom: 5vh;
+    }
+
+    .footer-contact {
+
+        margin-bottom: 5vh;
+    }
+
+    .facebook-twitter-footer {
+
+        margin-bottom: 5vh;
+    }
+
+}
+
+/* --------------------------------------------Mobile and tablets landscape-------------------------------------------- */
+
+@media only screen and (min-height: 360px) and (max-height: 370px) and (min-width: 630px) and (max-width: 645px) {
+
+    .error {
+
+        width: 100.4%;
+    }
+
+    .contact-us-button {
+
+        width: 102%;
+    }
+
+    .mobile-social {
+
+        margin-top: 3vh;
+    }
+}
+
+@media only screen and (min-height: 370px) and (max-height: 376px) and (min-width: 660px) and (max-width: 670px) {
+
+    .error {
+
+        width: 100%;
+    }
+
+    .mobile-social {
+
+        margin-top: 3vh;
+    }
+}
+
+@media only screen and (min-height: 530px) and (max-height: 545px) and (min-width: 710px) and (max-width: 725px) {
+
+    .error {
+
+        width: 99.3%;
+    }
+
+    .mobile-social {
+
+        margin-top: 3vh;
+    }
+}
+
+@media only screen and (min-height: 411px) and (max-height: 415px) and (min-width: 730px) and (max-width: 737px) {
+
+    .error {
+
+        width: 99%;
+    }
+
+    .mobile-social {
+
+        margin-top: 3vh;
+    }
+}
+
+@media only screen and (min-height: 310px) and (max-height: 325px) and (min-width: 565px) and (max-width: 570px) {
+
+    .error {
+
+        width: 101.8%;
+    }
+
+    .mobile-social {
+
+        margin-top: 3vh;
+    }
+}
+
+@media only screen and (min-height: 275px) and (max-height: 285px) and (min-width: 650px) and (max-width: 660px) {
+
+    .error {
+        width: 100.2%;
+    }
+
+    .mobile-header-button {
+
+        padding: 10px;
+    }
+
+    .mobile-social {
+
+        margin-top: 3vh;
+    }
+}
+
+@media only screen and (min-height: 410px) and (max-height: 412px) and (min-width: 820px) and (max-width: 825px) {
+
+    .mobile-social {
+
+        margin-top: 3vh;
+    }
+}
+
+@media only screen and (min-height: 370px) and (max-height: 380px) and (min-width: 810px) and (max-width: 815px) {
+
+    .mobile-social {
+
+        margin-top: 3vh;
+    }
+}

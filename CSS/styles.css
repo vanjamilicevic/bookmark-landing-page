@@ -57,7 +57,7 @@
 }
 
 .desktop-header-button {
-
+ 
     margin-left: 25px;
     padding: 5px 23px 5px 23px;
 
@@ -247,6 +247,7 @@
     font-family: "Rubik";
     color: white;
     font-size: 14px;
+    line-height: 28px;
     font-weight: 500;
     letter-spacing: 0.25px;
 
@@ -267,6 +268,7 @@
 
     font-family: "Rubik";
     font-size: 14px;
+    line-height: 28px;
     font-weight: 500;
     color: #242A45;
     letter-spacing: 0.25px;
@@ -325,13 +327,14 @@
     border-bottom: 1px solid #c7c7c7;
     padding-bottom: 0px;
     color: #242A45;
-    opacity: 0.68;
 }
 
-.simple-bookmarking {
+
+.simple-bookmarking-inner-div {
 
     padding-bottom: 30px;
-    border-bottom: 3px solid #FA5959;
+    border-bottom: 4px solid #FA5959;
+    opacity: 0.68;
 }
 
 .simple-bookmarking:hover {
@@ -340,16 +343,38 @@
     cursor: pointer;
 }
 
+.speedy-searching-inner-div {
+
+    padding-bottom: 30px;
+    opacity: 0.68;
+}
+
 .speedy-searching:hover {
 
     color: #FA5959;
     cursor: pointer;
 }
 
+.easy-sharing-inner-div {
+
+    padding-bottom: 30px;
+    opacity: 0.68;
+}
+
 .easy-sharing:hover {
 
     color: #FA5959;
     cursor: pointer;
+}
+
+.slide-buttons-active-state {
+
+    border-bottom: 4px solid #FA5959;
+}
+
+.slide-buttons-non-active-state {
+
+    border-bottom: none;
 }
 
 /* 
@@ -1051,18 +1076,29 @@
 
         font-size: 34px;
         line-height: 40px;
+        letter-spacing: -0.075px;
+        margin-top: 1vh;
     }
 
     .bookmark-description {
 
-        font-size: 14px;
-        line-height: 20px;
+        font-size: 15px;
+        line-height: 25px;
         margin-bottom: 1vh;
+        margin-top: 1vh;
     }
 
     .get-it-on-chrome {
 
+        font-size: 14px;
+        line-height: 28px;
         margin-top: 1vh;
+    }
+
+    .get-it-on-firefox {
+
+        font-size: 14px;
+        line-height: 28px;
     }
 
     .contact-us-button {
@@ -1081,8 +1117,8 @@
 
     .bookmark-description {
 
-        font-size: 12px;
-        line-height: 15px;
+        font-size: 18px;
+        line-height: 28px;
         margin-bottom: 1vh;
     }
 
@@ -1254,33 +1290,64 @@
         width: 60%;
         border: none;
         margin-bottom: 8vh;
+        font-size: 16px;
     }
 
     .simple-bookmarking {
 
         border-bottom: 1px solid #c7c7c7;
         border-top: 1px solid #c7c7c7;
-        padding-top: 3vh;
-        padding-bottom: 3vh;
     }
 
-    .simple-bookmarking-clicked {
+    .simple-bookmarking-inner-div {
 
-        border-bottom: 3px solid #FA5959;
+        width: 60%;
+        margin: auto;
+        padding-bottom: 20px;
+        padding-top: 20px;
     }
 
     .speedy-searching {
 
         border-bottom: 1px solid #c7c7c7;
-        padding-top: 3vh;
-        padding-bottom: 3vh;
+    }
+
+    .speedy-searching-inner-div {
+
+        width: 60%;
+        margin: auto;
+        padding-bottom: 20px;
+        padding-top: 20px;
     }
 
     .easy-sharing {
 
         border-bottom: 1px solid #c7c7c7;
-        padding-top: 3vh;
-        padding-bottom: 3vh;
+    }
+
+    .easy-sharing-inner-div {
+
+        width: 60%;
+        margin: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .simple-bookmarking-inner-div:hover { 
+        color: #242A45;
+        opacity: 1;
+    }
+
+    .speedy-searching-inner-div:hover {
+
+        color: #242A45;
+        opacity: 1;
+    }
+
+    .easy-sharing-inner-div:hover {
+
+        color: #242A45;
+        opacity: 1;
     }
 
     .bookmark-slides {
@@ -1355,6 +1422,16 @@
         width: 40%;
     }
 
+    .chrome-firefox-opera-title {
+
+        font-size: 20px;
+        letter-spacing: 0.25px;
+    }
+
+    .chrome-firefox-opera-version {
+         font-size: 15px;
+    }
+
     .add-to-chrome {
 
         justify-content: center;
@@ -1368,6 +1445,12 @@
     .add-to-opera {
 
         justify-content: center;
+    }
+
+    .add-and-install-button {
+
+        font-size: 14px;
+        letter-spacing: 0.25px;
     }
 
     .questions-tile {
@@ -1506,6 +1589,12 @@
         margin-left: 9vh;
         margin-right: 6vh;
     }
+
+    .more-info {
+
+        font-size: 14px;
+        letter-spacing: 0.25px;
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -1554,6 +1643,7 @@
     
 }
 
+
 /* ------------------------------------Media queries for specific mobile and tablet devices------------------------------------ */
 
 @media only screen and (min-width: 280px) and (max-width: 320px) and (min-height: 650px) and (max-height: 655px) {
@@ -1578,28 +1668,30 @@
 
     .bookmark-title {
 
-        font-size: 24px;
-        line-height: 30px;
+        font-size: 25px;
+        line-height: 40px;
         margin-top: 5vh;
     }
 
     .bookmark-description {
 
-        font-size: 12px;
-        line-height: 18px;
+        font-size: 15px;
+        line-height: 25px;
     }
 
     .get-it-on-chrome {
 
-        font-size: 10px;
-        line-height: 15px;
+        font-size: 14px;
+        line-height: 28px;
+        letter-spacing: 0.25px;
         margin-left: 0%;
     }
 
     .get-it-on-firefox {
 
-        font-size: 10px;
-        line-height: 15px;
+        font-size: 14px;
+        line-height: 28px;
+        letter-spacing: 0.25px;
         margin-top: 2vh;
     }
 
@@ -1610,14 +1702,15 @@
 
     .features-title {
 
-        font-size: 20px;
+        font-size: 24px;
+        letter-spacing: -0.075px;
         margin-bottom: 1vh;
     }
 
     .features-description {
 
-        font-size: 12px;
-        line-height: 18px;
+        font-size: 15px;
+        line-height: 25px;
     }
 
     .bookmarking-searching-sharing {
@@ -1637,18 +1730,22 @@
 
     .bookmark-slide-title {
 
-        font-size: 20px;
+        font-size: 22px;
+        line-height: 52px
+        letter-spacing: -0.075px;
     }
 
     .bookmark-slide-description {
 
-        font-size: 12px;
-        line-height: 18px;
+        font-size: 15px;
+        line-height: 25px;
     }
 
     .more-info {
 
-        font-size: 12px;
+        font-size: 14px;
+        line-height: 28px;
+        letter-spacing: 0.25px;
     }
 
     .download-the-extension {
@@ -1658,19 +1755,20 @@
 
     .download-the-extension-title {
 
-        font-size: 20px;
-        line-height: 25px;
+        font-size: 24px;
+        line-height: 52px;
+        letter-spacing: -0.075px;
     }
 
     .download-the-extension-description {
 
-        font-size: 12px;
-        line-height: 18px;
+        font-size: 15px;
+        line-height: 25px;
     }
 
     .chrome-firefox-opera {
 
-        width: 80%;
+        width: 90%;
     }
 
     .questions-container {
@@ -1680,24 +1778,26 @@
 
     .questions-tile {
 
-        font-size: 20px;
-        line-height: 25px;
+        font-size: 24px;
+        line-height: 52px;
+        letter-spacing: -0.075px;
     }
 
     .questions-description {
 
-        font-size: 12px;
-        line-height: 18px;
+        font-size: 15px;
+        line-height: 25px;
     }
 
     .question {
 
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .answer {
 
-        font-size: 14px;
+        font-size: 15px;
+        line-height: 25px;
     }
 
     .stay-up-to-date {
@@ -1765,27 +1865,31 @@
 
     .bookmark-title {
 
-        font-size: 24px;
-        line-height: 30px;
+        font-size: 28px;
+        line-height: 40px;
+        letter-spacing: -0..075px;
         margin-top: 5vh;
     }
 
     .bookmark-description {
 
-        font-size: 12px;
-        line-height: 18px;
+        font-size: 15px;
+        line-height: 25px;
     }
 
     .get-it-on-chrome {
 
-        font-size: 10px;
-        line-height: 15px;
+        font-size: 14px;
+        line-height: 28px;
+        letter-spacing: 0.25px;
+        margin-top: 2vh;
     }
 
     .get-it-on-firefox {
 
-        font-size: 10px;
-        line-height: 15px;
+        font-size: 14px;
+        line-height: 28px;
+        letter-spacing: 0.25px;
         margin-top: 2vh;
     }
 
@@ -1796,14 +1900,15 @@
 
     .features-title {
 
-        font-size: 20px;
+        font-size: 24px;
+        letter-spacing: -0.075px;
         margin-bottom: 1vh;
     }
 
     .features-description {
 
-        font-size: 12px;
-        line-height: 18px;
+        font-size: 15px;
+        line-height: 25px;
     }
 
     .bookmarking-searching-sharing {
@@ -1823,40 +1928,51 @@
 
     .bookmark-slide-title {
 
-        font-size: 20px;
+        font-size: 24px;
+        letter-spacing: -0.075px;
     }
 
     .bookmark-slide-description {
 
-        font-size: 12px;
-        line-height: 18px;
+        font-size: 15px;
+        line-height: 25px;
+        letter-spacing: -0.075px;
     }
 
     .more-info {
 
-        font-size: 12px;
+        font-size: 14px;
+        line-height: 28px;
     }
 
     .download-the-extension {
 
-        width: 85%;
+        width: 95%;
     }
 
     .download-the-extension-title {
 
-        font-size: 20px;
-        line-height: 25px;
+        font-size: 24px;
+        line-height: 52px;
+        letter-spacing: -0.075px;
     }
 
     .download-the-extension-description {
 
-        font-size: 12px;
-        line-height: 18px;
+        font-size: 15px;
+        line-height: 25px;
     }
 
     .chrome-firefox-opera {
 
         width: 80%;
+    }
+
+    .add-and-install-button {
+
+        font-size: 14px;
+        line-height: 28px;
+        letter-spacing: 0.25px;
     }
 
     .questions-container {
@@ -1866,19 +1982,19 @@
 
     .questions-tile {
 
-        font-size: 20px;
-        line-height: 25px;
+        font-size: 24px;
+        line-height: 52px;
     }
 
     .questions-description {
 
-        font-size: 12px;
-        line-height: 18px;
+        font-size: 15px;
+        line-height: 25px;
     }
 
     .question {
 
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .stay-up-to-date {
@@ -1949,50 +2065,54 @@
 
     .bookmark-title {
 
-        font-size: 24px;
-        line-height: 30px;
+        font-size: 30px;
+        line-height: 40px;
+        letter-spacing: -0.09375px;
         margin-top: 5vh;
     }
 
     .bookmark-description {
 
-        font-size: 12px;
-        line-height: 18px;
+        font-size: 15px;
+        line-height: 25px;
     }
 
     .get-it-on-chrome {
 
-        font-size: 10px;
-        line-height: 15px;
+        font-size: 14px;
+        line-height: 28px;
     }
 
     .get-it-on-firefox {
 
-        font-size: 10px;
-        line-height: 15px;
+        font-size: 14px;
+        line-height: 28px;
         margin-top: 2vh;
     }
 
     .features {
 
         width: 80%;
+        margin-bottom: 8vh;
     }
 
     .features-title {
 
-        font-size: 20px;
+        font-size: 24px;
+        line-height: 52px;
         margin-bottom: 1vh;
     }
 
     .features-description {
 
-        font-size: 12px;
-        line-height: 18px;
+        font-size: 15px;
+        line-height: 25px;
     }
 
     .bookmarking-searching-sharing {
 
         width: 90%;
+        font-size: 16px;
     }
 
     .semi-circle-bookmark-slides {
@@ -2007,23 +2127,26 @@
 
     .bookmark-slide-title {
 
-        font-size: 20px;
+        font-size: 24px;
     }
 
     .bookmark-slide-description {
 
-        font-size: 12px;
-        line-height: 18px;
+        font-size: 15px;
+        line-height: 25px;
     }
 
     .more-info {
 
-        font-size: 12px;
+        font-size: 14px;
+        line-height: 28px;
     }
 
     .download-the-extension {
 
         width: 85%;
+        font-size: 24px;
+        line-height: 52px;
     }
 
     .download-the-extension-title {
@@ -2034,8 +2157,8 @@
 
     .download-the-extension-description {
 
-        font-size: 12px;
-        line-height: 18px;
+        font-size: 15px;
+        line-height: 25px;
     }
 
     .chrome-firefox-opera {
@@ -2043,31 +2166,62 @@
         width: 80%;
     }
 
+    .chrome-firefox-opera-title {
+
+        font-size: 20px;
+    }
+
+    .chrome-firefox-opera-version {
+
+        font-size: 15px;
+    }
+
+    .add-and-install-button {
+
+        font-size: 14px;
+        line-height: 28px;
+    }
+
     .questions-container {
 
-        width: 90%;
+        width: 80%;
     }
 
     .questions-tile {
 
-        font-size: 20px;
-        line-height: 25px;
+        font-size: 24px;
+        line-height: 30px;
     }
 
     .questions-description {
 
-        font-size: 12px;
-        line-height: 18px;
+        font-size: 15px;
+        line-height: 25px;
     }
 
     .question {
 
-        font-size: 14px;
+        font-size: 15px;
+    }
+
+    .answer {
+
+        font-size: 15px;
+        line-height: 30px;
+    }
+
+    .joined {
+
+        margin-top: 0;
+        font-size: 12px;
+        letter-spacing: 4.61539px;
     }
 
     .stay-up-to-date {
 
         width: 90%;
+        font-size: 24px;
+        line-height: 28px;
     }
 
     .input-and-button {
@@ -2134,33 +2288,38 @@
 
     .bookmark-title {
 
-        font-size: 24px;
-        line-height: 30px;
+        font-size: 30px;
+        line-height: 40px;
+        letter-spacing: -0.09375px;
         margin-top: 5vh;
     }
 
     .bookmark-description {
 
-        font-size: 12px;
-        line-height: 18px;
+        font-size: 15px;
+        line-height: 25px;
     }
 
     .get-it-on-chrome {
 
-        font-size: 10px;
-        line-height: 15px;
+        font-size: 14px;
+        line-height: 28px;
+        letter-spacing: 0.25px;
     }
 
     .get-it-on-firefox {
 
-        font-size: 10px;
-        line-height: 15px;
+        font-size: 14px;
+        line-height: 28px;
+        letter-spacing: 0.25px;
         margin-top: 2vh;
     }
 
     .features {
 
         width: 80%;
+        font-size: 24px;
+        letter-spacing: -0.075px;
     }
 
     .features-title {
@@ -2171,13 +2330,15 @@
 
     .features-description {
 
-        font-size: 12px;
-        line-height: 18px;
+        font-size: 15px;
+        line-height: 25px;
     }
 
     .bookmarking-searching-sharing {
 
         width: 90%;
+        font-size: 16px;
+        letter-spacing: 0.53333px;
     }
 
     .semi-circle-bookmark-slides {
@@ -2192,18 +2353,21 @@
 
     .bookmark-slide-title {
 
-        font-size: 20px;
+        font-size: 24px;
+        letter-spacing: -0.075px;
     }
 
     .bookmark-slide-description {
 
-        font-size: 12px;
-        line-height: 18px;
+        font-size: 15px;
+        line-height: 25px;
     }
 
     .more-info {
 
-        font-size: 12px;
+        font-size: 14px;
+        letter-spacing: 0.25px;
+        line-height: 28px;
     }
 
     .download-the-extension {
@@ -2213,14 +2377,15 @@
 
     .download-the-extension-title {
 
-        font-size: 20px;
-        line-height: 25px;
+        font-size: 24px;
+        line-height: 52px;
+        letter-spacing: -0.75px;
     }
 
     .download-the-extension-description {
 
-        font-size: 12px;
-        line-height: 18px;
+        font-size: 15px;
+        line-height: 25px;
     }
 
     .chrome-firefox-opera {
@@ -2228,26 +2393,45 @@
         width: 80%;
     }
 
+    .chrome-firefox-opera-title {
+
+        font-size: 20px;
+        letter-spacing: 0.25px;
+    }
+
+    .chrome-firefox-opera-version {
+
+        font-size: 15px;
+    }
+
+    .add-and-install-button {
+
+        font-size: 14px;
+        line-height: 28px;
+        letter-spacing: 0.25px;
+    }
+
     .questions-container {
 
-        width: 90%;
+        width: 75%;
     }
 
     .questions-tile {
 
-        font-size: 20px;
-        line-height: 25px;
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: -0.075px;
     }
 
     .questions-description {
 
-        font-size: 12px;
-        line-height: 18px;
+        font-size: 15px;
+        line-height: 25px;
     }
 
     .question {
 
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .stay-up-to-date {
@@ -2326,28 +2510,30 @@
 
     .bookmark-title {
 
-        font-size: 24px;
-        line-height: 30px;
+        font-size: 30px;
+        line-height: 40px;
+        letter-spacing: -0.09px;
         margin-top: 5vh;
     }
 
     .bookmark-description {
 
-        font-size: 12px;
-        line-height: 18px;
+        font-size: 15px;
+        line-height: 25px;
     }
 
     .get-it-on-chrome {
 
-        font-size: 10px;
-        line-height: 15px;
+        font-size: 14px;
+        line-height: 28px;
+        letter-spacing: 0.25px;
     }
 
     .get-it-on-firefox {
 
-        font-size: 10px;
-        line-height: 15px;
-        margin-top: 2vh;
+        font-size: 14px;
+        line-height: 28px;
+        letter-spacing: 0.25px;
     }
 
     .features {
@@ -2357,14 +2543,15 @@
 
     .features-title {
 
-        font-size: 20px;
+        font-size: 24px;
         margin-bottom: 1vh;
     }
 
     .features-description {
 
-        font-size: 12px;
-        line-height: 18px;
+        font-size: 15px;
+        line-height: 25px;
+        letter-spacing: -0.075px;
     }
 
     .bookmarking-searching-sharing {
@@ -2379,23 +2566,26 @@
 
     .bookmark-slide-content {
 
-        width: 85%;
+        width: 80%;
     }
 
     .bookmark-slide-title {
 
-        font-size: 20px;
+        font-size: 24px;
     }
 
     .bookmark-slide-description {
 
-        font-size: 12px;
-        line-height: 18px;
+        font-size: 15px;
+        line-height: 25px;
+        letter-spacing: -0.075px;
     }
 
     .more-info {
 
-        font-size: 12px;
+        font-size: 14px;
+        line-height: 28px;
+        letter-spacing: 0.25px;
     }
 
     .download-the-extension {
@@ -2405,14 +2595,16 @@
 
     .download-the-extension-title {
 
-        font-size: 20px;
-        line-height: 25px;
+        font-size: 24px;
+        line-height: 52px;
+        letter-spacing: -0.075px;
     }
 
     .download-the-extension-description {
 
-        font-size: 12px;
-        line-height: 18px;
+        font-size: 15px;
+        line-height: 25px;
+        letter-spacing: -0.075px;
     }
 
     .chrome-firefox-opera {
@@ -2420,26 +2612,34 @@
         width: 80%;
     }
 
+    .add-and-install-button {
+
+        font-size: 14px;
+        line-height: 28px;
+        letter-spacing: 0.25px;
+    }
+
     .questions-container {
 
-        width: 90%;
+        width: 80%;
     }
 
     .questions-tile {
 
-        font-size: 20px;
-        line-height: 25px;
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: -0.08px;
     }
 
     .questions-description {
 
-        font-size: 12px;
-        line-height: 18px;
+        font-size: 15px;
+        line-height: 25px;
     }
 
     .question {
 
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .stay-up-to-date {

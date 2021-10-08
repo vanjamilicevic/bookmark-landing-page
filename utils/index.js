@@ -31,11 +31,12 @@ document.getElementById("contact-us-button").addEventListener("click", function(
     Setting slides to change on click
 */
 document.getElementById("simple-bookmarking").addEventListener ("click", function() {
-
-    document.getElementById("simple-bookmarking").style.borderBottom="3px solid #FA5959"
-    document.getElementById("easy-sharing").style.border="none"
-    document.getElementById("speedy-searching").style.border="none"
-
+ 
+    document.getElementById("simple-bookmarking-inner-div").classList.remove("slide-buttons-non-active-state")
+    document.getElementById("simple-bookmarking-inner-div").classList.add("slide-buttons-active-state")
+    document.getElementById("easy-sharing-inner-div").classList.remove("slide-buttons-active-state")
+    document.getElementById("speedy-searching-inner-div").classList.remove("slide-buttons-active-state")
+    
     document.getElementById("slide-one").classList.remove("none")
     document.getElementById("slide-two").classList.add("none")
     document.getElementById("slide-three").classList.add("none")
@@ -43,10 +44,14 @@ document.getElementById("simple-bookmarking").addEventListener ("click", functio
 
 document.getElementById("speedy-searching").addEventListener ("click", function() {
 
-    document.getElementById("speedy-searching").style.borderBottom="3px solid #FA5959"
-    document.getElementById("simple-bookmarking").style.border="none"
-    document.getElementById("easy-sharing").style.border="none"
     
+    document.getElementById("speedy-searching-inner-div").classList.remove("slide-buttons-non-active-state")
+    document.getElementById("speedy-searching-inner-div").classList.add("slide-buttons-active-state")
+    document.getElementById("simple-bookmarking-inner-div").classList.add("slide-buttons-non-active-state")
+    document.getElementById("simple-bookmarking-inner-div").classList.remove("slide-buttons-active-state")
+    document.getElementById("easy-sharing-inner-div").classList.remove("slide-buttons-active-state")
+    
+
     document.getElementById("slide-one").classList.add("none")
     document.getElementById("slide-two").classList.remove("none")
     document.getElementById("slide-three").classList.add("none")
@@ -54,9 +59,10 @@ document.getElementById("speedy-searching").addEventListener ("click", function(
 
 document.getElementById("easy-sharing").addEventListener ("click", function() {
 
-    document.getElementById("easy-sharing").style.borderBottom="3px solid #FA5959"
-    document.getElementById("simple-bookmarking").style.border="none"
-    document.getElementById("speedy-searching").style.border="none"
+    document.getElementById("easy-sharing-inner-div").classList.remove("slide-buttons-non-active-state")
+    document.getElementById("easy-sharing-inner-div").classList.add("slide-buttons-active-state")
+    document.getElementById("speedy-searching-inner-div").classList.add("slide-buttons-non-active-state")
+    document.getElementById("simple-bookmarking-inner-div").classList.add("slide-buttons-non-active-state")
 
     document.getElementById("slide-one").classList.add("none")
     document.getElementById("slide-two").classList.add("none")
